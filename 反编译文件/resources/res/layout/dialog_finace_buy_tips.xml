@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/btn_white_12rd" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="#3c3c3c" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="您需要升级到金牌代理才可查看\10手机号，是否升级？"/>
+        <View android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="15dp"/>
+        <TextView android:textSize="16dp" android:textColor="#3a5bff" android:id="@+id/tv_buy" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即升级"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_close" android:background="@mipmap/ic_close_share" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="18dp"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/constraint_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_send" android:background="#f5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:background="#f5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="配置" android:layout_marginStart="10dp"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_close" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@mipmap/ic_close_dialog" android:layout_marginEnd="12dp"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/red_marker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="名称:" android:layout_marginStart="16dp"/>
+        <EditText android:textSize="14dp" android:textColorHint="@color/color_999999" android:id="@+id/etv_mark_name" android:background="@drawable/corner_bg_storke_gray" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="请输入名称" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="备注:" android:layout_marginStart="16dp"/>
+        <EditText android:textSize="14dp" android:textColorHint="@color/color_999999" android:id="@+id/etv_mark_bz" android:background="@drawable/corner_bg_storke_gray" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="请输入备注" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_queren" android:background="@drawable/draw_address_bg" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="25dp" android:text="确认" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

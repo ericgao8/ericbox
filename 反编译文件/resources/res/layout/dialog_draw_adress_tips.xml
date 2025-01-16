@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/button_radius_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温馨提示"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/iv_close" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_close_dialog" android:layout_marginEnd="10dp"/>
+    </FrameLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/black" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <TextView android:textColor="#3a5bff" android:gravity="center_horizontal" android:id="@+id/tv_delete" android:background="@drawable/draw_delete_address_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="删除标记" android:layout_weight="1"/>
+        <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_jump_bz" android:background="@drawable/login_send_code_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="跳转备注" android:layout_weight="1" android:layout_marginStart="15dp"/>
+    </LinearLayout>
+</LinearLayout>

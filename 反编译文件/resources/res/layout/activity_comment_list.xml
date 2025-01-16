@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fr_top" android:background="#3a5bff" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back_white" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地图圈"/>
+    </FrameLayout>
+    <LinearLayout android:id="@+id/ll_tab" android:background="@mipmap/ic_comment_left" android:layout_width="match_parent" android:layout_height="56dp" app:layout_constraintTop_toBottomOf="@+id/fr_top">
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_dongtai" android:layout_width="0dp" android:layout_height="match_parent" android:text="动态" android:layout_weight="1"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_share" android:layout_width="0dp" android:layout_height="match_parent" android:text="分享" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/comment_viewpager" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_tab"/>
+    <ImageView android:layout_gravity="end|center_vertical" android:id="@+id/iv_publish" android:background="@mipmap/ic_comment_pulish_btn" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginBottom="30dp" android:layout_marginEnd="30dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

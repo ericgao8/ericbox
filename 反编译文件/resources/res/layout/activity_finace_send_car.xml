@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fr_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="代理直通车"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/iv_top" android:background="@drawable/bg_send_car" android:layout_width="match_parent" android:layout_height="260dp" app:layout_constraintTop_toBottomOf="@+id/fr_top"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top_content" android:background="@mipmap/ic_ztc_top" android:padding="14dp" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginTop="25dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" app:layout_constraintTop_toTopOf="@+id/iv_top">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_one" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您当前是铜牌代理"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一级佣金"/>
+                <TextView android:textSize="12dp" android:textColor="#8c3401" android:id="@+id/tv_one_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30%"/>
+                <TextView android:textSize="12dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二级佣金" android:layout_marginStart="5dp"/>
+                <TextView android:textSize="12dp" android:textColor="#8c3401" android:id="@+id/tv_one_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5%"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/color_71310B" android:id="@+id/tv_level_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="升级可获得更高佣金"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_level_big" android:layout_width="100dp" android:layout_height="135dp" android:layout_marginTop="20dp" android:layout_marginEnd="15dp" app:layout_constraintEnd_toEndOf="@+id/ll_top_content" app:layout_constraintTop_toTopOf="@+id/ll_top_content"/>
+    <ImageView android:id="@+id/iv_bottom" android:background="@drawable/bg_ztc_bottom_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="220dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="@+id/iv_top"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="47dp" android:paddingStart="20dp" android:paddingEnd="20dp" app:layout_constraintTop_toTopOf="@+id/iv_bottom">
+        <FrameLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/fr_one" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_pay_one" android:background="@mipmap/ic_ztc_text_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/color_71310B" android:id="@+id/tv_pay_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="升级费用"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="@color/color_71310B" android:id="@+id/tv_pay_one_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥"/>
+                    <TextView android:textSize="36dp" android:textStyle="bold" android:textColor="@color/color_71310B" android:id="@+id/tv_dl_one_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="600"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp">
+                    <TextView android:textSize="12dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一级佣金"/>
+                    <TextView android:textSize="12dp" android:textColor="#8c3401" android:id="@+id/tv_two_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30%"/>
+                    <TextView android:textSize="12dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二级佣金" android:layout_marginStart="5dp"/>
+                    <TextView android:textSize="12dp" android:textColor="#8c3401" android:id="@+id/tv_two_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5%"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_dl_one" android:background="@drawable/bg_send_car_text" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="银牌代理" android:paddingStart="13dp" android:paddingEnd="13dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/fr_two" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_pay_two" android:background="@mipmap/ic_ztc_text_unsel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/color_5D5D5D" android:id="@+id/tv_pay_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="升级费用"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="@color/color_5D5D5D" android:id="@+id/tv_pay_one_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥"/>
+                    <TextView android:textSize="36dp" android:textStyle="bold" android:textColor="@color/color_5D5D5D" android:id="@+id/tv_dl_two_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="900"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp">
+                    <TextView android:textSize="12dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一级佣金"/>
+                    <TextView android:textSize="12dp" android:textColor="#8c3401" android:id="@+id/tv_three_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30%"/>
+                    <TextView android:textSize="12dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二级佣金" android:layout_marginStart="5dp"/>
+                    <TextView android:textSize="12dp" android:textColor="#8c3401" android:id="@+id/tv_three_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5%"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_dl_two" android:background="@drawable/bg_send_car_text_unsel" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="银牌代理" android:paddingStart="13dp" android:paddingEnd="13dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_zfb" android:background="@drawable/bg_zfb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginStart="30dp" android:layout_marginEnd="30dp" app:layout_constraintTop_toBottomOf="@+id/ll_content">
+        <ImageView android:background="@mipmap/ic_ztc_zfb" android:layout_width="20dp" android:layout_height="20dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginBottom="13dp" android:text="支付宝支付" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_wx" android:background="@drawable/bg_wx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="30dp" android:layout_marginEnd="30dp" app:layout_constraintTop_toBottomOf="@+id/ll_zfb">
+        <ImageView android:background="@mipmap/ic_ztc_wx" android:layout_width="20dp" android:layout_height="20dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginBottom="13dp" android:text="微信支付" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/iv_bottom" app:layout_constraintStart_toStartOf="@+id/iv_bottom" app:layout_constraintTop_toTopOf="@+id/iv_bottom">
+        <ImageView android:background="@mipmap/ic_fx_baoxiang" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_qzq" android:background="@mipmap/ic_fx_baxo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去推广赚钱"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

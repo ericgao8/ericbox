@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_top" android:background="@mipmap/ic_new_login_top" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:background="@mipmap/ic_login_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_marginStart="20dp" app:layout_constraintBottom_toTopOf="@+id/iv_content" app:layout_constraintStart_toStartOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/iv_content" android:background="@drawable/bg_login_new" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout" android:layout_width="wrap_content" android:layout_height="46dp" app:tabIndicator="@drawable/bg_tab_indicator" app:tabIndicatorColor="#3a5bff" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="3dp" app:tabMode="0" app:tabRippleColor="@android:color/transparent"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="600dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

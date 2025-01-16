@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/back" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/back" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="20sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="操作手册" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycleView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

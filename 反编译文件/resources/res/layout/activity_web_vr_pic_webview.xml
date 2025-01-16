@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="20dp" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全景图浏览"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="14dp" android:id="@+id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginStart="15dp"/>
+    </FrameLayout>
+</LinearLayout>

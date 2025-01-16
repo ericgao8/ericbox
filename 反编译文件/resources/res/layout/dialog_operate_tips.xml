@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/constraint_root" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="14dp" android:textColor="#000000" android:gravity="center_horizontal" android:paddingTop="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="操作指南"/>
+    <LinearLayout android:background="#f6f7ff" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="14dp">
+        <ImageView android:background="@mipmap/ic_yidong_map" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp">
+            <TextView android:textSize="14dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="移动地图"/>
+            <TextView android:textSize="10dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单个手指按下拖动"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#f6f7ff" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="14dp">
+        <ImageView android:background="@mipmap/ic_suofang_map" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp">
+            <TextView android:textSize="14dp" android:textColor="#34bd7b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="缩放地图"/>
+            <TextView android:textSize="10dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="两个手指同时挤压或者拉开"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#f6f7ff" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="14dp">
+        <ImageView android:background="@mipmap/ic_qingxie_map" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp">
+            <TextView android:textSize="14dp" android:textColor="#fca34d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="倾斜地图"/>
+            <TextView android:textSize="10dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="两个手指同方向拖拽"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#f6f7ff" android:paddingTop="15dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="14dp">
+        <ImageView android:background="@mipmap/ic_xuanzhuan_map" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp">
+            <TextView android:textSize="14dp" android:textColor="#cb4dcc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="旋转地图"/>
+            <TextView android:textSize="10dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="两个手指向相反反向的拖动"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_gnjs" android:background="@drawable/btn_e7effff_4rd" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+        <ImageView android:background="@mipmap/ic_gnjs_tag" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="功能介绍" android:layout_marginStart="7dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_zxkf" android:background="@drawable/btn_e7effff_4rd" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <ImageView android:background="@mipmap/ic_zxkf_tag" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在线客服" android:layout_marginStart="7dp"/>
+    </LinearLayout>
+</LinearLayout>

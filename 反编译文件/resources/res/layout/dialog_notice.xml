@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/constraint_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/bg_dialog_notice" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/webView_notice" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_select_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+        <ImageView android:id="@+id/iv_un_notice" android:background="@mipmap/ic_pay_select" android:layout_width="15dp" android:layout_height="15dp"/>
+        <TextView android:textSize="12dp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不再提示" android:layout_marginStart="7dp"/>
+    </LinearLayout>
+    <Button android:id="@+id/btn_close" android:background="@mipmap/ic_notice_close" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="32dp"/>
+</LinearLayout>

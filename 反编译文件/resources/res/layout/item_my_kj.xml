@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12dp" android:textColor="@color/black" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1" android:layout_marginStart="3dp"/>
+        <ImageView android:id="@+id/iv_jiantou" android:background="@mipmap/ic_draw_enter" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginStart="3dp" android:layout_marginEnd="3dp"/>
+    </LinearLayout>
+    <View android:background="#30000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

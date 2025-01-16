@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fr_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@mipmap/ic_dy_share_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:layout_marginStart="10dp">
+        <ImageView android:id="@+id/iv_code" android:layout_width="67dp" android:layout_height="67dp" android:layout_marginTop="18dp" android:layout_marginBottom="3dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <TextView android:textSize="10dp" android:textColor="#000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="截图扫码下载\10足不出户看世界"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_btn" android:background="@drawable/bg_70_000000_round" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="11dp">
+        <TextView android:textSize="14dp" android:textColor="#ffffff" android:id="@+id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="如需发布多张图，请\10再次截图（0/3）"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="14dp" android:textColor="#000000" android:id="@+id/tv_again" android:background="@drawable/bg_ffffff_99_round" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="再次截图" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+        <TextView android:textSize="14dp" android:textColor="#000000" android:id="@+id/tv_pulish" android:background="@drawable/bg_ffffff_99_round" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布抖音" android:paddingStart="12dp" android:paddingEnd="12dp" android:layout_marginStart="10dp" android:layout_marginEnd="12dp"/>
+    </LinearLayout>
+</FrameLayout>

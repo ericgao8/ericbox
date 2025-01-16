@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/cj_content_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fl_news" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/fl_ad" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/cj_content_text_select" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

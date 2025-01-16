@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/btn_white_12rd" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_vip_content" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@mipmap/ic_vip_level"/>
+            <TextView android:textSize="14dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VIP会员到期时间" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+        <TextView android:textSize="16dp" android:textColor="@color/black" android:id="@+id/tv_vip_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_dlkt_content" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@mipmap/ic_vip_level"/>
+            <TextView android:textSize="14dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地理课堂到期时间" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+        <TextView android:textSize="16dp" android:textColor="@color/black" android:id="@+id/tv_dlkt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+    <View android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="17dp"/>
+    <TextView android:textSize="16dp" android:textColor="#3a5bff" android:gravity="center" android:id="@+id/tv_ok" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="我知道了"/>
+</LinearLayout>

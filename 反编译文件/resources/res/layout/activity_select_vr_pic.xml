@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fr_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建全景VR"/>
+        <TextView android:textColor="#3a5bff" android:layout_gravity="end|center_vertical" android:id="@+id/tv_paishe_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如何拍摄？" android:drawableLeft="@mipmap/ic_vr_create_flag" android:drawablePadding="4dp" android:layout_marginEnd="6dp"/>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/lay_content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_select_pic" android:background="@drawable/bg_btn_select_vr_pic" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:background="@mipmap/ic_select_pic_vr" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginStart="23dp"/>
+            <TextView android:textSize="14dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本地相册添加" android:layout_marginStart="10dp" android:layout_marginEnd="28dp"/>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/ll_select_pic">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_upload_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="14dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_upload_pic" android:background="@drawable/bg_btn_upload_vr_pic" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="立即上传" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+        <TextView android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="声明：上传VR全景经审核，有效可获取30积分" android:layout_marginStart="18dp"/>
+    </LinearLayout>
+</LinearLayout>

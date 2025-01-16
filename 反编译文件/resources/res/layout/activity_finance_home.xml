@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@mipmap/ic_finance_top" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/fr_top" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/iv_head_border" android:background="@drawable/bg_white_crice" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginStart="17dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/fr_top"/>
+    <ImageView android:id="@+id/iv_head" android:layout_width="40dp" android:layout_height="40dp" app:layout_constraintBottom_toBottomOf="@+id/iv_head_border" app:layout_constraintEnd_toEndOf="@+id/iv_head_border" app:layout_constraintStart_toStartOf="@+id/iv_head_border" app:layout_constraintTop_toTopOf="@+id/iv_head_border"/>
+    <TextView android:textSize="16dp" android:textColor="@color/color_333333" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" app:layout_constraintBottom_toBottomOf="@+id/iv_head_border" app:layout_constraintStart_toEndOf="@+id/iv_head_border" app:layout_constraintTop_toTopOf="@+id/iv_head_border"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_detail" android:background="@mipmap/ic_finance_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp" app:layout_constraintTop_toBottomOf="@+id/iv_head_border">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginStart="28dp" android:layout_marginEnd="16dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可提现"/>
+                <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="#ffdf77" android:id="@+id/tv_ktx" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_7ba4ff_99_round" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_level" android:layout_width="19dp" android:layout_height="19dp" android:layout_marginStart="12dp"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tv_level_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_marginStart="3dp" android:layout_marginEnd="12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginStart="28dp" android:layout_marginEnd="16dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_drz" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="待入账"/>
+                <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="#ffdf77" android:id="@+id/tv_drz" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现中"/>
+                <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="#ffdf77" android:id="@+id/tv_txz" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已提现"/>
+                <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="#ffdf77" android:id="@+id/tv_ytx" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="17dp" android:layout_marginStart="28dp" android:layout_marginEnd="16dp">
+            <TextView android:textSize="14dp" android:textColor="@color/color_3A5BFF" android:gravity="center" android:id="@+id/tv_txmx" android:background="@drawable/bg_c5f4ff_99_round" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="提现明细" android:layout_weight="1"/>
+            <TextView android:textSize="14dp" android:textColor="@color/color_3A5BFF" android:gravity="center" android:id="@+id/tv_tx_jump" android:background="@drawable/bg_c5f4ff_99_round" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="提现" android:layout_weight="1" android:layout_marginStart="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ljyj" android:background="@mipmap/ic_finance_yj" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="17dp" app:layout_constraintEnd_toStartOf="@+id/ll_kehu" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_detail">
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.4"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_ljyj_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.6">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/tv_ljyj" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="累计佣金"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_kehu" android:background="@mipmap/ic_finance_kehu" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/ll_ljyj" app:layout_constraintTop_toBottomOf="@+id/ll_detail">
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.4"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.6">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/tv_kehu" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客户"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="37dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_kehu">
+        <ImageView android:layout_gravity="center_vertical" android:background="@mipmap/ic_finance_fx" android:layout_width="17dp" android:layout_height="17dp"/>
+        <TextView android:textSize="12dp" android:textColor="#999999" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分销订单" android:layout_marginStart="4dp"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/tv_fxdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp"/>
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="笔"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:background="@mipmap/ic_finance_td" android:layout_width="17dp" android:layout_height="17dp"/>
+        <TextView android:textSize="12dp" android:textColor="#999999" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的团队" android:layout_marginStart="4dp"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/tv_wdtd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp"/>
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

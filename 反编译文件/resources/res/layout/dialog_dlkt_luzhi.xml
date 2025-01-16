@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/constraint_root" android:background="@drawable/dialog_user_point" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本功能为代理功能，主要功能是录制从地球镜头到VR全景的一镜到底视频，通过发布视频到各大短视频平台变现，操作简单易上手，人人都可以通过制作地图视频在家创业，开通以后可加入地图视频制作团队俱乐部，有专属导师对接!如需开通请联系推荐人，如果没有推荐人请直接联系平台客服。"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/ll_open" android:background="@drawable/dialog_09c261_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="50dp" android:layout_marginEnd="50dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_weichat_white"/>
+        <TextView android:textSize="14dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系客服" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>

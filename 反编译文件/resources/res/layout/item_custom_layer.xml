@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_item_custom_layer" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+    <TextView android:textSize="16dp" android:textColor="@color/black" android:id="@+id/tv_layer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名字" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="14dp" android:textColor="#ee256efa" android:id="@+id/tv_er_wei_code" android:background="@drawable/bg_btn_custom_layer" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二维码" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        <TextView android:textSize="14dp" android:textColor="#ee256efa" android:id="@+id/tv_delete" android:background="@drawable/bg_btn_custom_layer" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" android:paddingStart="8dp" android:paddingEnd="8dp" android:layout_marginStart="10dp"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="14dp" android:textColor="#ee256efa" android:id="@+id/tv_use" android:background="@drawable/bg_btn_custom_layer" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改图层" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+    </LinearLayout>
+</LinearLayout>

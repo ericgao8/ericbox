@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fr_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于我们"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/fr_top">
+        <ImageView android:background="@mipmap/logo" android:layout_width="60dp" android:layout_height="60dp"/>
+        <TextView android:textSize="12dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="三维地图发现"/>
+        <TextView android:textSize="12dp" android:textColor="#000000" android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="三维地图发现"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_white_10rd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" app:layout_constraintTop_toBottomOf="@+id/ll_version">
+        <LinearLayout android:id="@+id/ll_yhxy" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#000000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="用户协议" android:layout_weight="1"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+        <LinearLayout android:id="@+id/ll_ysxy" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#000000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="隐私协议" android:layout_weight="1"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+        <LinearLayout android:id="@+id/ll_zhzz" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#000000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="测绘资质" android:layout_weight="1"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+        <LinearLayout android:id="@+id/ll_rjzz" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#000000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="软件著作权" android:layout_weight="1"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+        <LinearLayout android:id="@+id/ll_hkjy" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#000000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="航空经营许可证" android:layout_weight="1"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

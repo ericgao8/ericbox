@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fr_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布动态"/>
+        <Button android:textColor="#ffffff" android:layout_gravity="end|center_vertical" android:id="@+id/btn_send" android:background="@drawable/btn_publish_send_bg" android:layout_width="50dp" android:layout_height="28dp" android:text="发布" android:layout_marginEnd="14dp"/>
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/fr_top">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+            <EditText android:textSize="18dp" android:textColor="#000000" android:textColorHint="#cccccc" android:id="@+id/etv_title" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="请填写标题(5~20字)" android:lines="1" android:maxLength="20"/>
+            <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16dp"/>
+            <EditText android:textSize="18dp" android:textColor="#000000" android:textColorHint="#cccccc" android:gravity="start" android:id="@+id/etv_content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="16dp" android:hint="请输入内容(最多200字)" android:maxLength="200"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_add" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="10dp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="* 图片最多上传6张"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp">
+                <ImageView android:background="@mipmap/ic_comment_point" android:layout_width="13dp" android:layout_height="15dp"/>
+                <TextView android:textColor="#222222" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="所在位置" android:layout_marginStart="17dp"/>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <ImageView android:background="@mipmap/ic_enter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16dp"/>
+            <TextView android:textColor="#d4570c" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="本动态仅限发布周边实景，禁止发布无关或者违规内容，内容发布后 24小时之内审核通过，即可公开显示，并且赠送5积分。我们鼓励大家实拍周边真实环境照片，并定位准确，满6张图片审核通过后将在地图上显示圈形照片"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

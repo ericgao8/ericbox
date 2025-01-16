@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:paddingTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12dp" android:textColor="#000000" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标记1"/>
+    <EditText android:textSize="12dp" android:textColor="@color/black" android:textColorHint="#cccccc" android:id="@+id/etv_mark_name" android:background="@drawable/btn_f8f8f8_8rd" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="请输入标记群组名称" android:layout_weight="1" android:paddingStart="12dp" android:paddingEnd="12dp" android:layout_marginStart="13dp"/>
+</LinearLayout>

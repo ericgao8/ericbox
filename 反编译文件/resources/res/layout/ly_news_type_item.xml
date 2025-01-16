@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="40dp">
+    <TextView android:textSize="18sp" android:textColor="@color/cj_content_text_unselect" android:gravity="center_vertical" android:id="@+id/tv_name" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:text="推荐"/>
+</RelativeLayout>

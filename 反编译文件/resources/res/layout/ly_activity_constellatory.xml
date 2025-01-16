@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/cj_content_bg_xzys" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/oset_iv_back" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:src="@mipmap/ly_constellatory_dial_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="星座运势" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+        <GridView android:id="@+id/gv_dial" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:numColumns="3"/>
+        <FrameLayout android:id="@+id/fl_banenr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

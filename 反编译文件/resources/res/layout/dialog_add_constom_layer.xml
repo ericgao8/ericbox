@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fr_ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/con_ll_content" android:background="@drawable/compass_setting_dialog_bg_white" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180dp" android:layout_marginStart="70dp">
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/compass_close" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="14dp" android:textColor="#000000" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图层选择" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <LinearLayout android:gravity="center" android:id="@+id/add_scan" android:background="@drawable/bg_add_layer" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_title">
+            <ImageView android:background="@mipmap/ic_scan_layer" android:layout_width="19dp" android:layout_height="19dp"/>
+            <TextView android:textSize="14dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扫一扫" android:layout_marginStart="7dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/add_layer" android:background="@drawable/bg_add_layer" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="@+id/add_scan" app:layout_constraintStart_toStartOf="@+id/add_scan" app:layout_constraintTop_toBottomOf="@+id/add_scan">
+            <ImageView android:background="@mipmap/ic_add_layer" android:layout_width="19dp" android:layout_height="19dp"/>
+            <TextView android:textSize="14dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加图层" android:layout_marginStart="7dp"/>
+        </LinearLayout>
+        <TextView android:textSize="14dp" android:textColor="#000000" android:id="@+id/tv_history" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="选择地图" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/add_layer"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycleView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:layout_constraintBottom_toTopOf="@+id/tv_delete" app:layout_constraintHeight_max="250dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_history"/>
+        <TextView android:textSize="14dp" android:textColor="#ff4500" android:id="@+id/tv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

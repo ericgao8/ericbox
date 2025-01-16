@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fr_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的"/>
+    </FrameLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/ll_fun" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/fr_top">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_toux" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="头像"/>
+            <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_head" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="19dp" android:layout_marginBottom="19dp" android:src="@mipmap/ic_head_default"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_nic" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称"/>
+            <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <EditText android:textSize="14dp" android:textColor="#333333" android:gravity="right" android:id="@+id/etv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_yhsc" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性别"/>
+            <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_baomi" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_baomi" android:layout_width="14dp" android:layout_height="14dp" android:src="@mipmap/ic_sex_select"/>
+                    <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保密" android:layout_marginStart="4dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_nan" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_nan" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/circle_sex_bg" android:layout_marginStart="20dp"/>
+                    <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="男" android:layout_marginStart="4dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_nv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_nv" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/circle_sex_bg" android:layout_marginStart="20dp"/>
+                    <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="女" android:layout_marginStart="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_sr" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生日"/>
+            <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <TextView android:textSize="14dp" android:textColor="#333333" android:id="@+id/tv_sr" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="20dp" android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_phone" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号"/>
+            <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="20dp" android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_update_pwd" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改密码"/>
+            <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="20dp" android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_weixin" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑定微信"/>
+            <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:background="@mipmap/ic_enter" android:layout_width="20dp" android:layout_height="20dp"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

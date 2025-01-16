@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_content" android:background="@mipmap/ic_no_vip_vr" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="10dp">
+            <com.example.testmapbox.play.SimpleVideoView android:id="@+id/videoPlayer" android:layout_width="240dp" android:layout_height="135dp"/>
+        </androidx.cardview.widget.CardView>
+        <com.example.testmapbox.vr.NoScrollRecyclerView android:id="@+id/list_view_1" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginTop="10dp"/>
+        <com.example.testmapbox.vr.NoScrollRecyclerView android:id="@+id/list_view_2" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginTop="10dp"/>
+        <com.example.testmapbox.vr.NoScrollRecyclerView android:id="@+id/list_view_3" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <TextView android:textSize="14dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_try_use" android:background="@drawable/bg_vr_no_vip_3a5bff" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="随机试用VR全景" android:paddingStart="26dp" android:paddingEnd="26dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_open_vip" android:background="@drawable/bg_vr_no_vip_ff5722" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:paddingStart="26dp" android:paddingEnd="26dp">
+        <TextView android:textSize="14dp" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开通VIP立即体验"/>
+        <TextView android:textSize="10dp" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VIP用户可以查看家乡附近全景"/>
+    </LinearLayout>
+</LinearLayout>

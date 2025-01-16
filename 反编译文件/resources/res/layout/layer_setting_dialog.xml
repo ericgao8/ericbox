@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/constraint_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@drawable/bg_layer_setting" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <TextView android:textSize="14dp" android:textColor="#222222" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图层设置"/>
+            <ImageView android:layout_gravity="end" android:id="@+id/iv_close" android:background="@mipmap/ic_close_size" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/add_layer" android:background="@drawable/bg_add_layer" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <ImageView android:background="@mipmap/ic_add_layer" android:layout_width="19dp" android:layout_height="19dp"/>
+            <TextView android:textSize="14dp" android:textColor="#3a5bff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加自定义图源" android:layout_marginStart="7dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+            <TextView android:textSize="15dp" android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:text="图层切换" android:layout_weight="1"/>
+            <TextView android:textSize="13dp" android:textColor="@color/black" android:id="@+id/edit_layer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑自定义图层" android:drawableRight="@mipmap/ic_enter"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_layer" android:background="@drawable/btn_white_12rd" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:paddingEnd="5dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <TextView android:textSize="15dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="地图设置" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/btn_white_12rd" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+                <TextView android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:text="显示中心十字架" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:id="@+id/center_line_switch" android:layout_width="wrap_content" android:layout_height="24dp" android:textOn="" android:textOff="" app:showText="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+                <TextView android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:text="允许搜索旋转" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:id="@+id/allow_search_switch" android:layout_width="wrap_content" android:layout_height="24dp" android:textOn="" android:textOff="" app:showText="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+                <TextView android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:text="3D模式滑块按钮" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:id="@+id/silder_switch" android:layout_width="wrap_content" android:layout_height="24dp" android:textOn="" android:textOff="" app:showText="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

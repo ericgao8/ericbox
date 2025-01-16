@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/btn_white_12rd" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="18dp" android:paddingEnd="25dp">
+    <LinearLayout android:id="@+id/ll_add_pic" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@mipmap/ic_add_pic" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加图片" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_add_gif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+        <ImageView android:background="@mipmap/ic_add_gif" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="素材库" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_add_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+        <ImageView android:background="@mipmap/ic_add_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加文字" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_add_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+        <ImageView android:background="@mipmap/ic_add_address" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加地标" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>

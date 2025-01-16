@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/cj_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:id="@+id/oset_iv_back" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:src="@mipmap/ly_constellatory_dial_back" android:layout_centerVertical="true" android:onClick="back"/>
+            <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新闻资讯" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="40dp"/>
+        <View android:background="@color/cj_content_text_select" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:id="@+id/fl_news" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_down" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="140dp" android:layout_marginBottom="20dp">
+        <cj.mobile.view.CircularProgressView android:id="@+id/cpv" android:layout_width="match_parent" android:layout_height="match_parent" app:CJBackColor="@android:color/transparent" app:CJBackWidth="2dp" app:CJProgColor="@android:color/holo_orange_dark" app:CJProgWidth="2dp" app:CJProgress="0"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/holo_orange_dark" android:gravity="center" android:id="@+id/tv_down" android:layout_width="match_parent" android:layout_height="match_parent" android:text="59"/>
+    </RelativeLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/cj_content_text_select" android:gravity="center" android:id="@+id/tv_reward" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="继续浏览60秒并且阅读3篇新闻即可获得奖励，0/3篇" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

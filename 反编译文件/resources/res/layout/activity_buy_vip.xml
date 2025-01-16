@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fr_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员中心"/>
+    </FrameLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/fr_top">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_vip_tag" android:background="@drawable/range_vip_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:layout_marginStart="15dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员产品" android:layout_marginStart="4dp" app:layout_constraintBottom_toBottomOf="@+id/iv_vip_tag" app:layout_constraintStart_toEndOf="@+id/iv_vip_tag" app:layout_constraintTop_toTopOf="@+id/iv_vip_tag"/>
+            <LinearLayout android:id="@+id/ll_price" android:layout_width="match_parent" android:layout_height="116dp" android:layout_marginTop="18dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/iv_vip_tag">
+                <RelativeLayout android:id="@+id/rl_jk" android:background="@drawable/circle_price_bg" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="6dp" android:layout_weight="1">
+                    <TextView android:textSize="28dp" android:textStyle="bold" android:textColor="#ff503e" android:id="@+id/tv_ji_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="79" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="14dp" android:textColor="#333333" android:id="@+id/tv_ji_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="季卡" android:layout_above="@+id/tv_ji_price" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="14dp" android:textColor="#aaaaaa" android:id="@+id/tv_ji_price_old" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="￥129.0" android:layout_below="@+id/tv_ji_price" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <FrameLayout android:id="@+id/fl_nk" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="13dp">
+                    <RelativeLayout android:id="@+id/rl_nk" android:background="@drawable/circle_select_buy_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp">
+                        <TextView android:textSize="28dp" android:textStyle="bold" android:textColor="#ff503e" android:id="@+id/tv_year_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99" android:layout_centerInParent="true"/>
+                        <TextView android:textSize="14dp" android:textColor="#333333" android:id="@+id/tv_year_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="年卡" android:layout_above="@+id/tv_year_price" android:layout_centerHorizontal="true"/>
+                        <TextView android:textSize="14dp" android:textColor="#aaaaaa" android:id="@+id/tv_year_price_old" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="￥199.0" android:layout_below="@+id/tv_year_price" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="right" android:background="@drawable/circle_recommend_corn_bg" android:paddingTop="1dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐" android:paddingStart="3dp" android:paddingEnd="3dp"/>
+                </FrameLayout>
+                <RelativeLayout android:id="@+id/rl_yj" android:background="@drawable/circle_price_bg" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="6dp" android:layout_weight="1" android:layout_marginStart="13dp">
+                    <TextView android:textSize="28dp" android:textStyle="bold" android:textColor="#ff503e" android:id="@+id/tv_long_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="199" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="14dp" android:textColor="#333333" android:id="@+id/tv_long_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="永久" android:layout_above="@+id/tv_long_price" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="14dp" android:textColor="#aaaaaa" android:id="@+id/tv_long_price_old" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="￥500.0" android:layout_below="@+id/tv_long_price" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_gmxy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="15dp" app:layout_constraintStart_toStartOf="@+id/ll_price" app:layout_constraintTop_toBottomOf="@+id/ll_price">
+                <ImageView android:id="@+id/iv_xieyi" android:background="@mipmap/ic_pay_select" android:layout_width="14dp" android:layout_height="14dp"/>
+                <TextView android:textSize="12dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买即视为同意" android:layout_marginStart="8dp"/>
+                <TextView android:textSize="12dp" android:textColor="#485dcc" android:id="@+id/tv_fwxy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《三维地图发现会员服务协议》"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_vip_tq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="15dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_gmxy">
+                <ImageView android:background="@drawable/range_vip_tag" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员特权" android:layout_marginStart="4dp"/>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="10dp" android:background="@drawable/bg_buy_guize_tips" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="非会员可用以下功能共计20次" android:paddingStart="8dp" android:paddingEnd="8dp" android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_qx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:src="@mipmap/ic_vip_big_new" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_vip_tq"/>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/ll_pay" android:background="@drawable/circle_pay_bg" android:paddingLeft="17dp" android:paddingTop="15dp" android:paddingRight="17dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" app:divider="@drawable/line_solite_bg" app:layout_constraintTop_toBottomOf="@+id/iv_qx" app:showDividers="middle">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_wchat" android:layout_width="match_parent" android:layout_height="50dp">
+                    <ImageView android:background="@mipmap/ic_wechat" android:layout_width="20dp" android:layout_height="20dp"/>
+                    <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信支付" android:layout_marginStart="7dp"/>
+                    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/iv_wchat" android:background="@mipmap/ic_pay_select" android:layout_width="14dp" android:layout_height="14dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_alipay" android:layout_width="match_parent" android:layout_height="50dp">
+                    <ImageView android:background="@mipmap/ic_alipay" android:layout_width="20dp" android:layout_height="20dp"/>
+                    <TextView android:textSize="14dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付宝支付" android:layout_marginStart="7dp"/>
+                    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/iv_alipay" android:background="@drawable/circle_vip_select_bg" android:layout_width="14dp" android:layout_height="14dp"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <Button android:textColor="#ffffff" android:id="@+id/btn_open" android:background="@drawable/circle_open_vip_bg" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginTop="19dp" android:text="立即开通" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" app:layout_constraintTop_toBottomOf="@+id/ll_pay"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

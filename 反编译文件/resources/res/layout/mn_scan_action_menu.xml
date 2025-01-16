@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_default_menu" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/btn_scan_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:id="@+id/iv_scan_light" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/mn_icon_scan_flash_light_off"/>
+                <TextView android:textSize="12dp" android:textColor="#ffffff" android:id="@+id/tv_scan_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="打开手电筒"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/btn_close" android:paddingLeft="20dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="50dp">
+                <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/mn_icon_scan_close" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/btn_photo" android:paddingLeft="16dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_alignParentRight="true">
+                <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/mn_icon_scan_photo" android:scaleType="centerInside"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_custom_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</FrameLayout>

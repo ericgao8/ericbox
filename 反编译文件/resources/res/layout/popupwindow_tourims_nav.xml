@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/tourims_nav_popu_4rd" android:layout_width="15dp" android:layout_height="15dp" android:rotation="180" android:layout_marginEnd="0.5dp"/>
+    <TextView android:textColor="@color/black" android:background="@drawable/bg_white_tourisem_crice_10" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请长按地图要导航的目的地\10点击【导航】即可" android:paddingStart="4dp" android:paddingEnd="10dp"/>
+</LinearLayout>

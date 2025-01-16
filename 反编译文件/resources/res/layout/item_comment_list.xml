@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_head" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="15dp" android:layout_marginStart="15dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:textSize="16dp" android:textColor="#3a5bff" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卢锡安" android:layout_marginStart="12dp" app:layout_constraintStart_toEndOf="@+id/iv_head" app:layout_constraintTop_toTopOf="@+id/iv_head"/>
+    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="断剑重铸之日，骑士归来之时。" android:lines="1" android:layout_marginEnd="21dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/tv_name" app:layout_constraintTop_toBottomOf="@+id/tv_name"/>
+    <TextView android:textSize="14dp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="断剑重铸之日，骑士归来之时。" android:maxLines="4" android:layout_marginEnd="21dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/tv_title" app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginEnd="32dp" app:layout_constraintStart_toStartOf="@+id/tv_title" app:layout_constraintTop_toBottomOf="@+id/tv_content"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_address" android:paddingTop="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginEnd="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/tv_title" app:layout_constraintTop_toBottomOf="@+id/list_img">
+        <ImageView android:id="@+id/iv_address" android:background="@mipmap/ic_address_nlue" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="#3a5bff" android:ellipsize="end" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_bottom" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/tv_title" app:layout_constraintTop_toBottomOf="@+id/ll_address">
+        <TextView android:textSize="12dp" android:textColor="#999999" android:id="@+id/tv_titme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7月18日 14:34:26"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_distance" android:background="@mipmap/ic_distance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="#999999" android:id="@+id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.3km" android:layout_marginStart="2dp"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:background="@mipmap/ic_comment_num" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="#999999" android:id="@+id/tv_comment_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14" android:layout_marginStart="2dp"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/ll_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="32dp">
+            <ImageView android:id="@+id/iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_like_num"/>
+            <TextView android:textSize="12dp" android:textColor="#999999" android:id="@+id/tv_like_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14" android:layout_marginStart="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#e8e8e8" android:layout_width="0dp" android:layout_height="0.5dp" android:layout_marginTop="5dp" android:layout_marginEnd="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/tv_name" app:layout_constraintTop_toBottomOf="@+id/ll_bottom"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

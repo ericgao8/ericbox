@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@mipmap/ic_vip_alert_bg" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="0.45"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.55">
+            <EditText android:textSize="14dp" android:textColorHint="#999999" android:gravity="center" android:id="@+id/etv_yqm" android:background="@mipmap/ic_open_vip_txt" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="37dp" android:layout_marginTop="25dp" android:hint="输入好友邀请码" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <TextView android:textSize="14dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_yjyq" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="您已被好友邀请！" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <EditText android:textSize="14dp" android:textColorHint="#999999" android:gravity="center" android:id="@+id/etv_code" android:background="@mipmap/ic_open_vip_txt" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="37dp" android:layout_marginTop="10dp" android:hint="输入10位数激活码" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <TextView android:textSize="10dp" android:textColor="@color/color_999999" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="以上2项若无 可直接付费开通 " android:layout_marginStart="15dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_jhmjh" android:background="@mipmap/ic_open_vip_ok" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="确认提交"/>
+            <ImageView android:layout_width="191dp" android:layout_height="41dp" android:layout_marginTop="10dp" android:src="@mipmap/ic_open_vip_d" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@+id/btn_close" android:background="@mipmap/ic_notice_close" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="20dp"/>
+</LinearLayout>

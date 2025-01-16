@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/constraint_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@drawable/bg_draw_pen_size" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+            <TextView android:textSize="14dp" android:textColor="@color/black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_close" android:background="@mipmap/ic_close_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+            <TextView android:textSize="10dp" android:textColor="@color/black" android:id="@+id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="10dp" android:textColor="@color/black" android:id="@+id/tv_haiba" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <LinearLayout android:id="@+id/tv_copy" android:background="@drawable/bg_blue_apha" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6dp" android:paddingEnd="6dp">
+                <TextView android:textSize="10dp" android:textColor="@color/color_3A5BFF" android:id="@+id/tv_jw" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="10dp" android:textColor="@color/color_draw_08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="复制" android:layout_marginStart="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tv_sczb" android:background="@drawable/bg_blue_btn" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏坐标" android:drawableLeft="@mipmap/ic_share_sczb" android:drawablePadding="4dp" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tv_dhzl" android:background="@drawable/bg_blue_btn" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导航这里" android:drawableLeft="@mipmap/ic_share_dhzl" android:drawablePadding="4dp" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tv_tjqj" android:background="@drawable/bg_blue_btn" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加全景" android:drawableLeft="@mipmap/ic_share_qjtj" android:drawablePadding="4dp" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tv_zbewm" android:background="@drawable/bg_blue_btn" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="坐标二维码" android:drawableLeft="@mipmap/ic_share_ewm" android:drawablePadding="4dp" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tv_fbdt" android:background="@drawable/bg_blue_btn" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布动态" android:drawableLeft="@mipmap/ic_share_fbdt" android:drawablePadding="4dp" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tv_fxwz" android:background="@drawable/bg_blue_btn" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享位置" android:drawableLeft="@mipmap/ic_share_fxwz" android:drawablePadding="4dp" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+    <TextView android:textSize="18dp" android:textColor="@color/cj_content_text_unselect" android:gravity="center" android:id="@+id/tv_city" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="6"/>
+    <TextView android:textSize="18dp" android:textColor="@color/cj_content_text_unselect" android:gravity="center" android:id="@+id/tv_92" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3"/>
+    <TextView android:textSize="18dp" android:textColor="@color/cj_content_text_unselect" android:gravity="center" android:id="@+id/tv_95" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3"/>
+    <TextView android:textSize="18dp" android:textColor="@color/cj_content_text_unselect" android:gravity="center" android:id="@+id/tv_98" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3"/>
+    <TextView android:textSize="18dp" android:textColor="@color/cj_content_text_unselect" android:gravity="center" android:id="@+id/tv_0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3"/>
+</LinearLayout>

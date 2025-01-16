@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/constraint_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@drawable/bg_draw_pen_size" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <TextView android:textSize="16dp" android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:text="已选择位置" android:layout_weight="1"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_close" android:background="@mipmap/ic_close_size" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:paddingTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@+id/ll_dao_nav" android:background="@drawable/btn_e7efff_8rd" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="14dp">
+                <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@mipmap/ic_tourims_nav" android:layout_width="19dp" android:layout_height="19dp"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/color_3A5BFF" android:paddingTop="11dp" android:paddingBottom="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去这里" android:layout_marginStart="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/ll_dao_vr" android:background="@drawable/btn_e7efff_8rd" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="14dp" android:layout_marginEnd="14dp">
+                <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@mipmap/ic_tourims_vr" android:layout_width="19dp" android:layout_height="19dp"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/color_3A5BFF" android:paddingTop="11dp" android:paddingBottom="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入导览" android:layout_marginStart="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

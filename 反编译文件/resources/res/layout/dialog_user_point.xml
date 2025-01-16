@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/constraint_root" android:background="@drawable/dialog_user_point" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+        <ImageView android:id="@+id/iv_hide" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/ic_eye_open"/>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/point_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:tabIndicatorColor="@color/black"/>
+        <ImageView android:id="@+id/tv_cancel" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/compass_close"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycleView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycleView_my" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycleView_dl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

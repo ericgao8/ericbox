@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <ImageView android:id="@+id/iv_pull" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/ly_pull"/>
+        <ProgressBar android:id="@+id/pb_listview_header" android:layout_width="20dp" android:layout_height="20dp"/>
+        <TextView android:textSize="13sp" android:textColor="@android:color/darker_gray" android:id="@+id/tv_listview_header_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="下拉刷新"/>
+    </LinearLayout>
+    <TextView android:textSize="10sp" android:textColor="@android:color/darker_gray" android:layout_gravity="center_horizontal" android:id="@+id/tv_listview_header_last_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最后更新时间"/>
+</LinearLayout>

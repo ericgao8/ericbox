@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/fr_ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/btn_white_share_top_8rd" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@+id/tab_layout" android:layout_width="wrap_content" android:layout_height="46dp" app:tabIndicator="@drawable/bg_tab_indicator" app:tabIndicatorColor="#3a5bff" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="3dp" app:tabMinWidth="20dp" app:tabMode="0" app:tabPaddingEnd="4dp" app:tabPaddingStart="4dp" app:tabRippleColor="@android:color/transparent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_white_share_bottom_8rd" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="30dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/share_kj_list" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="5dp" android:layout_weight="1"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/my_kj_list" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="5dp" android:layout_weight="1"/>
+        <TextView android:textSize="10dp" android:textColor="@color/black" android:id="@+id/tv_remark" android:background="@drawable/btn_gray_share_8rd" android:padding="2dp" android:layout_width="match_parent" android:layout_height="120dp"/>
+    </LinearLayout>
+</LinearLayout>

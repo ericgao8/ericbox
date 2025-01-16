@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#a0000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="30dp" android:layout_marginEnd="30dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="20sp" android:textColor="#222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="请输入标记保存名称"/>
+        <EditText android:textSize="15sp" android:textColor="#222" android:textColorHint="#ccc" android:gravity="center_horizontal" android:id="@+id/et_mark_name" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="请输入名称" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp">
+            <TextView android:textSize="15sp" android:textColor="#6b8e23" android:gravity="center" android:id="@+id/save_mark" android:layout_width="60dp" android:layout_height="wrap_content" android:text="保存"/>
+            <TextView android:textSize="15sp" android:textColor="#6b8e23" android:gravity="center" android:id="@+id/cancel_save" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="取消"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

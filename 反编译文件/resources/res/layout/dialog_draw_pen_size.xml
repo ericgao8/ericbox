@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/constraint_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@drawable/bg_draw_pen_size" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <TextView android:textSize="14dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="笔触大小"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_close" android:background="@mipmap/ic_close_size" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp">
+            <TextView android:textColor="#000000" android:id="@+id/tv_d_switch" android:layout_width="0dp" android:layout_height="wrap_content" android:text="自由绘图" android:layout_weight="1"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/d_switch" android:layout_width="wrap_content" android:layout_height="24dp" android:checked="true" android:textOn="" android:textOff="" app:showText="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:layout_marginStart="24dp">
+            <ImageView android:background="@drawable/bg_blue_crice" android:layout_width="6dp" android:layout_height="6dp"/>
+            <TextView android:textSize="14dp" android:textColor="@color/black" android:id="@+id/tv_pen_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15.0" android:layout_marginStart="24dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:layout_marginStart="23dp" android:layout_marginEnd="21dp">
+            <TextView android:textSize="14dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_switch"/>
+            <SeekBar android:layout_gravity="center_vertical" android:id="@+id/seek_light" android:layout_width="0dp" android:layout_height="wrap_content" android:maxHeight="15dp" android:max="300" android:progress="150" android:progressDrawable="@drawable/seekbar_progress_color" android:minHeight="15dp" android:thumb="@drawable/seek_bar_thumb" android:layout_weight="1" android:layout_marginStart="16dp" android:splitTrack="false"/>
+            <TextView android:textSize="14dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" android:layout_marginStart="9dp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="30dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_tag" android:background="@drawable/bg_blue_crice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="18dp" android:minHeight="18dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

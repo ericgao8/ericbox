@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.testmapbox.draw.DrawImageContentView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/draw_pic_view" android:layout_width="70dp" android:layout_height="70dp"/>

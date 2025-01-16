@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <size android:height="36dp" android:width="36dp"/>
+    <solid android:color="@color/mn_scan_viewfinder_laser_result_point"/>
+    <stroke android:width="3dp" android:color="@color/mn_scan_viewfinder_laser_result_point_border"/>
+    <corners android:radius="36dp"/>
+</shape>

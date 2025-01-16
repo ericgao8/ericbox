@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="18dp" android:paddingEnd="18dp">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_head" android:layout_width="44dp" android:layout_height="44dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="16dp">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邹思"/>
+            <TextView android:textSize="12dp" android:textColor="#999999" android:id="@+id/tv_dingdan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="订单：0"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#333333" android:id="@+id/tv_xf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消费：0"/>
+            <TextView android:textSize="12dp" android:textColor="#999999" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="2024/05/21"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16dp" android:layout_marginBottom="15dp"/>
+</LinearLayout>

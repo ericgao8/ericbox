@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_fffff2f2_10_round" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp">
+        <TextView android:textSize="10dp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="未完成订单仅展示直推订单信息，不显示二级客户，手机号查看需要金牌和银牌代理才开解锁，联系客服咨询开通升级，点我查看升级权益。" android:layout_weight="1" android:layout_marginStart="13dp"/>
+        <ImageView android:id="@+id/iv_zixun" android:background="@mipmap/ic_weichat_zx" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="8dp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_uncheck" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12dp"/>
+</LinearLayout>

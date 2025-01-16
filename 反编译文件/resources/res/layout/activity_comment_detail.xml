@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fr_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:background="@mipmap/ic_back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="7dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="浏览动态"/>
+        <TextView android:textSize="14dp" android:textColor="#222222" android:layout_gravity="end|center_vertical" android:id="@+id/iv_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="举报" android:layout_marginEnd="14dp"/>
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="20dp" android:paddingStart="15dp" android:paddingEnd="15dp" app:layout_constraintBottom_toTopOf="@+id/ll_send" app:layout_constraintTop_toBottomOf="@+id/fr_top">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16dp"/>
+            <TextView android:textSize="16dp" android:textColor="#333333" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_address" android:background="@mipmap/ic_address_nlue" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="12dp" android:textColor="#3a5bff" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_liked"/>
+                    <TextView android:textSize="12dp" android:textColor="#f62a2a" android:id="@+id/tv_like_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="#999999" android:id="@+id/tv_psz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拍摄者:"/>
+                    <TextView android:textSize="12dp" android:textColor="#3a5bff" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="12dp" android:textColor="#999999" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp"/>
+                <TextView android:textSize="12dp" android:textColor="#3a5bff" android:id="@+id/tv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" android:layout_marginStart="20dp"/>
+            </LinearLayout>
+            <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16dp"/>
+            <FrameLayout android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_comment" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_shenhe" android:paddingTop="15dp" android:paddingBottom="17dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+                    <TextView android:textSize="12dp" android:textColor="#f62a2a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="审核未通过"/>
+                    <TextView android:textSize="12dp" android:textColor="#f62a2a" android:id="@+id/tv_shenhe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="本动态仅限发布周边实景，禁止发布无关或者违规内容，内容发布后 24小时之内审核通过，即可公开显示，并且赠送5积分。我们鼓励大家实拍周边真实环境照片，并定位准确，满6张图片审核通过后将在地图上显示圈形照片。"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_send" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="56dp" app:layout_constraintBottom_toBottomOf="0">
+        <TextView android:textColor="#5f5f5f" android:gravity="center_vertical" android:id="@+id/tv_input" android:background="@drawable/btn_send_edit_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:text="发条评论吧" android:drawableLeft="@mipmap/ic_comment_bi" android:drawablePadding="11dp" android:layout_weight="1" android:paddingStart="14dp" android:layout_marginStart="15dp"/>
+        <Button android:textColor="@color/white" android:id="@+id/btn_send" android:background="@drawable/btn_send_bg" android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:text="发送" android:layout_marginStart="14dp" android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

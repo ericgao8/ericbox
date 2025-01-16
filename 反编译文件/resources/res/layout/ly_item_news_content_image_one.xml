@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/cj_content_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cj.mobile.view.SquareImageView android:id="@+id/iv_one" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_weight="3"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="7">
+            <TextView android:textSize="16sp" android:textColor="@color/cj_content_text_unselect" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textSize="10sp" android:textColor="@color/cj_content_text_unselect" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间"/>
+                <TextView android:textSize="10sp" android:textColor="@color/cj_content_text_unselect" android:id="@+id/tv_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="作者" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

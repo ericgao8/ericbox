@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <VideoView android:id="@+id/video" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <View android:id="@+id/v_click" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp">
+        <ImageView android:id="@+id/iv_voice" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:src="@mipmap/ly_voiced" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="15dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_time" android:background="@drawable/ly_background_down_time" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="20dp" android:minWidth="30dp"/>
+            <ImageView android:id="@+id/iv_close" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="20dp" android:src="@mipmap/ly_reward_close"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="16dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_btn" android:background="@drawable/ly_bg_circular_bead_blue" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_marginBottom="30dp" android:text="查看详情" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/tv_logo" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp" android:src="@mipmap/ly_ad_logo" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

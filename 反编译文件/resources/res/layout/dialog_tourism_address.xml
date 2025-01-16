@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/constraint_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@drawable/bg_draw_pen_size" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <EditText android:textSize="14dp" android:textColor="@color/black" android:textColorHint="#999999" android:id="@+id/etv_search" android:background="@drawable/corner_bg_tour_search_gray" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="搜索目的地" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:imeOptions="actionSearch" android:paddingStart="15dp" android:paddingEnd="15dp" android:layout_marginStart="15dp"/>
+            <TextView android:textSize="14dp" android:textColor="@color/black" android:id="@+id/tv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_dir" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

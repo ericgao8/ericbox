@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18dp" android:textColor="@color/cj_text_color_mbti" android:id="@+id/tv_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="问题"/>
+        <RadioGroup android:id="@+id/rg_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+            <RadioButton android:textSize="18dp" android:textColor="@color/cj_text_color_mbti" android:id="@+id/rb_optionA" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RadioButton android:textSize="18dp" android:textColor="@color/cj_text_color_mbti" android:id="@+id/rb_optionB" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <TextView android:textSize="20dp" android:textColor="@color/cj_content_text_unselect" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_next" android:background="@color/cj_text_color_mbti" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="50dp" android:text="下一题"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_native_express" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

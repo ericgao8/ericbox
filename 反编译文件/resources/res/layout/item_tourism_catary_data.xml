@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_marginStart="10dp">
+    <ImageView android:id="@+id/iv_tourism" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/text_white_tourism" android:layout_width="match_parent" android:layout_height="64dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13dp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_name" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1" android:paddingStart="7dp"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_tag" android:background="@mipmap/ic_tourims_tag" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginEnd="7dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_dis" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="7dp" android:paddingEnd="7dp">
+            <TextView android:textSize="9dp" android:textColor="@color/white" android:id="@+id/tv_lv" android:background="@drawable/bg_touris_lv" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="7dp"/>
+            <TextView android:textSize="9dp" android:textColor="#458cf9" android:id="@+id/tv_group_na" android:background="@drawable/bg_touris_group_na" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_dis" android:background="@mipmap/ic_tour_dis" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="9dp" android:textColor="#999999" android:id="@+id/tv_dis" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

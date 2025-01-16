@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/btn_white_12rd" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16dp" android:textColor="@color/black" android:gravity="center" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="隐私协议"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_dlkt_content" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_private" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="5dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_pay_select"/>
+                <TextView android:textSize="12dp" android:textColor="#333333" android:id="@+id/tv_xy_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已阅读并同意以下协议"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:textColor="#3a5bff" android:id="@+id/tv_xy_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="《隐私政策》"/>
+            <TextView android:textSize="12dp" android:textColor="#3a5bff" android:id="@+id/tv_xy_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="《用户协议》"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="17dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="#3a5bff" android:gravity="center" android:id="@+id/tv_ok" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="同意并继续登录" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

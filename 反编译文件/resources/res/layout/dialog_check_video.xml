@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/constraint_root" android:background="@drawable/dialog_user_point" android:padding="20dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18dp" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="解锁视频" android:layout_weight="1"/>
+            <ImageView android:id="@+id/tv_cancel" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/compass_close"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <EditText android:textSize="15dp" android:id="@+id/etv_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入密码" android:lines="1" android:layout_weight="1"/>
+            <TextView android:textSize="15dp" android:textColor="@color/black" android:id="@+id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <Button android:id="@+id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消"/>
+            <Button android:id="@+id/btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_marginStart="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
